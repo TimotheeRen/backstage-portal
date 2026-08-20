@@ -34,6 +34,12 @@ node_modules/
 dist
 dist-types
 
+
+!packages/backend/
+!packages/backend/dist/
+!packages/backend/dist/skeleton.tar.gz
+!packages/backend/dist/bundle.tar.gz
+
 # Temporary change files created by Vim
 *.swp
 
