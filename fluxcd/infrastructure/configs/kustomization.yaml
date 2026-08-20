@@ -4,5 +4,4 @@ kind: Kustomization
 resources:
   - postgres
   - monitoring
-  - secrets-gen
   - traefik
