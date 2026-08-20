@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: backstage-frontend
-          image: timotheeren/kubepods-backstage-frontend:sha-3f81a471e606b7860b8fdd611c326829a9dbc974
+          image: timotheeren/backstage-frontend:sha-dc5f8c492c76cf857db8e68ce91303ae44208179
           ports:
             - containerPort: 80
