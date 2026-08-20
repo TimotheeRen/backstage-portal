@@ -1,0 +1,23 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: OCIRepository
+metadata:
+  name: atlas-chart
+  namespace: default
+spec:
+  interval: 5m0s
+  url: oci://ghcr.io/ariga/charts/atlas-operator
+  ref:
+    semver: "0.7.29"
+---
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: atlas-operator
+  namespace: default
+spec:
+  interval: 15m
+  timeout: 5m
+  chartRef:
+    kind: OCIRepository
+    name: atlas-chart
+    namespace: default
