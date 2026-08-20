@@ -3,7 +3,6 @@ kind: Kustomization
 resources:
   - kube-prometheus-stack.yaml
   - cnpg.yaml
-  - atlas-operator.yaml
   - ingress-traefik.yaml
   - desktops-namespace.yaml
   - grafana-loki.yaml

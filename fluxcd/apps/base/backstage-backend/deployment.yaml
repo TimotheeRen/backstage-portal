@@ -1,23 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ui
+  name: backstage-backend
   namespace: default
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ui
+      app: backstage-backend
   template:
     metadata:
       labels:
-        app: ui
+        app: backstage-backend
     spec:
       containers:
-        - name: ui
-          image: timotheeren/kubepods-ui:sha-3f81a471e606b7860b8fdd611c326829a9dbc974
+        - name: backstage-backend
+          image: timotheeren/backstage-backend
           ports:
-            - containerPort: 3000
-          env:
-            - name: API_HOST
-              value: "http://api:3001"
+            - containerPort: 7007
