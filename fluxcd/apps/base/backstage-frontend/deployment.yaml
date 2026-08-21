@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: backstage-frontend
-          image: timotheeren/backstage-frontend:sha-0decf5d1fc61c54a32b9c7ca1089a4b72ab8852d
+          image: timotheeren/backstage-frontend:sha-ab3c53b95f03b7079167554477dd954a6bd5dd30
           ports:
             - containerPort: 80
