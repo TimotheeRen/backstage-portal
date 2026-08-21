@@ -5,6 +5,8 @@ WORKDIR /app
 
 COPY --chown=node:node . .
 
+ENV NODE_ENV=production
+
 RUN yarn install
 
 RUN yarn workspace app build
