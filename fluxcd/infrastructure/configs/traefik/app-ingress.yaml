@@ -6,13 +6,12 @@ metadata:
 spec:
   ingressClassName: traefik
   rules:
-    - host: kubepods.com
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: backstage
-                port:
-                  number: 8080
+    http:
+      paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: backstage-frontend
+              port:
+                number: 8080
