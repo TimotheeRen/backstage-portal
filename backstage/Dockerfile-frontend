@@ -9,7 +9,7 @@ ENV NODE_ENV=production
 
 RUN yarn install
 
-RUN yarn workspace app build --config ../../app-config.yaml --config ../../app-config.production.yaml
+RUN yarn workspace app build --config app-config.yaml --config app-config.production.yaml
 
 FROM nginx:1-alpine3.23
 

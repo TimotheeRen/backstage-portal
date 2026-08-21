@@ -4,10 +4,9 @@ metadata:
   name: backstage-backend
   namespace: default
 spec:
-  type: NodePort
+  type: ClusterIP
   selector:
     app: backstage-backend
   ports:
     - port: 7000
       targetPort: 7000
-      nodePort: 30700

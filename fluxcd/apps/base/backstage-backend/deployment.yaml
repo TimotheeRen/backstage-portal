@@ -25,4 +25,4 @@ spec:
                   name: backstage-postgres-cluster-app
                   key: uri
             - name: BACKEND_HOST
-              value: "localhost:7000"
+              value: "localhost:8080"

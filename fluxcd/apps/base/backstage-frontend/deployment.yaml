@@ -20,4 +20,4 @@ spec:
             - containerPort: 80
           env:
             - name: BACKEND_HOST
-              value: "localhost:7000"
+              value: "localhost:8080"
