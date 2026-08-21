@@ -14,7 +14,7 @@ spec:
               service:
                 name: backstage-backend
                 port:
-                  number: 7000
+                  number: 8080
           - path: /
             pathType: Prefix
             backend:
