@@ -13,7 +13,7 @@ delete:
 	k3d cluster delete Backstage
 
 forward:
-	kubectl port-forward svc/backstage-postgres-cluster-rw 5433:5432 &
+	kubectl port-forward svc/backstage-postgres-cluster-rw 5432:5432 &
 
 show-password:
 	@echo "backstage-postgres-cluster-app: $$(kubectl get secret backstage-postgres-cluster-app -o jsonpath='{.data.password}' | base64 -d)"
