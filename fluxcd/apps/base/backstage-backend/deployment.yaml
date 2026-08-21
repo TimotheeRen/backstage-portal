@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: backstage-backend
-          image: timotheeren/backstage-backend:sha-ed7a64385784f47da833e282330b83557d60480f
+          image: timotheeren/backstage-backend:sha-8e3643c882f3744b2fae01a5fba7909df222d52d
           ports:
             - containerPort: 7000
           env:
