@@ -6,9 +6,6 @@ on:
       image:
         required: true
         type: string
-      path:
-        required: true
-        type: string
     secrets:
       dockerhub-username:
         required: true
@@ -43,7 +40,6 @@ jobs:
         uses: docker/build-push-action@bcafcacb16a39f128d818304e6c9c0c18556b85f
         with:
           context: backstage
-          file: ./backstage/${{ inputs.path }}
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}

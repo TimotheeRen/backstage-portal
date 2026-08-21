@@ -3,7 +3,7 @@ name: Backstage CI/CD
 on:
   push:
     paths:
-      - "backstage/**" # To sync with additional extension config
+      - "backstage/**"
   workflow_dispatch:
 
 jobs:
@@ -11,7 +11,6 @@ jobs:
     uses: timotheeren/backstage-portal/.github/workflows/ci.yml@main
     with:
       image: "backstage"
-      path: "Dockerfile"
     secrets:
       dockerhub-username: ${{ vars.DOCKERHUB_USERNAME }}
       dockerhub-token: ${{ secrets.DOCKERHUB_TOKEN }}
