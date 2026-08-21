@@ -1,0 +1,7 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([["8620"],{2711(t,e,a){a.d(e,{EntityLinksCard:()=>b});var n=a(31085),i=a(16400),r=a(30545),s=a(23127),l=a(64947),o=a(72501),d=a(58837),c=a(62112),m=a(47250),h=a(58045);let p=`metadata:
+  name: example
+  links:
+    - url: https://dashboard.example.com
+      title: My Dashboard
+      icon: dashboard`,u=(0,d.A)(t=>({code:{borderRadius:6,margin:t.spacing(2,0),background:"dark"===t.palette.type?"#444":t.palette.common.white}}),{name:"PluginCatalogEntityLinksEmptyState"});function k(){let t=u(),{t:e}=(0,m.i)(h.W);return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(o.A,{variant:"body1",children:e("entityLinksCard.emptyDescription")}),(0,n.jsx)("div",{className:t.code,children:(0,n.jsx)(c.z,{text:p,language:"yaml",showLineNumbers:!0,highlightedNumbers:[3,4,5,6],customStyle:{background:"inherit",fontSize:"115%"}})}),(0,n.jsx)(l.A,{variant:"contained",color:"primary",target:"_blank",href:"https://backstage.io/docs/features/software-catalog/descriptor-format#links-optional",children:e("entityLinksCard.readMoreButtonTitle")})]})}var g=a(81409),y=a(95208);let b=t=>{let{cols:e}=t,{entity:a}=(0,i.tN)(),l=(0,y.n)(),{t:o}=(0,m.i)(h.W),d=a?.metadata?.links;return(0,n.jsx)(r.o,{title:o("entityLinksCard.title"),children:d&&0!==d.length?(0,n.jsx)(g.m,{cols:e,items:d.map(({url:t,title:e,icon:a})=>({text:e??t,href:t,Icon:a?l.getSystemIcon(a)??s.default:s.default}))}):(0,n.jsx)(k,{})})}}}]);
+//# sourceMappingURL=8620.1e82c397976c.chunk.js.map

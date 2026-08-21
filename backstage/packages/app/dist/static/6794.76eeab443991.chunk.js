@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([["6794"],{49697(e,a,n){n.r(a),n.d(a,{TemplatingExtensionsPage:()=>p.j,TemplatingExtensionsPageContent:()=>p.a});var p=n(24964)}}]);

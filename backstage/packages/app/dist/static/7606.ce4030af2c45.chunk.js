@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([["7606"],{44021(a,e,p){p.d(e,{SearchPage:()=>s.g});var s=p(67176)}}]);

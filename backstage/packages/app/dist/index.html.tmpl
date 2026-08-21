@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Backstage is an open source framework for building developer portals"
+    />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link
+      rel="manifest"
+      href="<%= publicPath %>/manifest.json"
+      crossorigin="use-credentials"
+    />
+    <link rel="icon" href="<%= publicPath %>/favicon.ico" />
+    <link rel="shortcut icon" href="<%= publicPath %>/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="<%= publicPath %>/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="<%= publicPath %>/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="<%= publicPath %>/favicon-16x16.png"
+    />
+    <link
+      rel="mask-icon"
+      href="<%= publicPath %>/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <title><%= config.getOptionalString('app.title') ?? 'Backstage' %></title>
+  <meta name="backstage-app-mode" content="public"><meta name="backstage-public-path" content="<%= publicPath %>/"><script defer src="<%= publicPath %>/static/runtime.0e6c3ca8b36c.js"></script><script defer src="<%= publicPath %>/static/module-backstage.9769796e007c.js"></script><script defer src="<%= publicPath %>/static/module-react-aria.97917e5b6400.js"></script><script defer src="<%= publicPath %>/static/module-material-ui.f0e4f3d5ff24.js"></script><script defer src="<%= publicPath %>/static/module-lodash.c4748bc1f07b.js"></script><script defer src="<%= publicPath %>/static/module-motion-dom.addca0b71b0f.js"></script><script defer src="<%= publicPath %>/static/module-date-fns.e6ec5c7ec32c.js"></script><script defer src="<%= publicPath %>/static/module-azure.e1b303e4053a.js"></script><script defer src="<%= publicPath %>/static/module-zod.cdcab6ffa117.js"></script><script defer src="<%= publicPath %>/static/module-yaml.0433853338a8.js"></script><script defer src="<%= publicPath %>/static/module-typespec.6d7c0923e82b.js"></script><script defer src="<%= publicPath %>/static/module-ajv.164b722ab09c.js"></script><script defer src="<%= publicPath %>/static/module-framer-motion.065988d2db50.js"></script><script defer src="<%= publicPath %>/static/module-mui.fd5a29c840a9.js"></script><script defer src="<%= publicPath %>/static/module-material-table.2d7f5d9a14a5.js"></script><script defer src="<%= publicPath %>/static/module-react-stately.6963ceb9732a.js"></script><script defer src="<%= publicPath %>/static/module-react-aria-components.16c60eb3cae7.js"></script><script defer src="<%= publicPath %>/static/module-micromark-core-commonmark.6d530f9db11e.js"></script><script defer src="<%= publicPath %>/static/module-parse5.b1755bf0fabb.js"></script><script defer src="<%= publicPath %>/static/module-octokit.84d9b6911ec4.js"></script><script defer src="<%= publicPath %>/static/module-xterm.9884858c2ba5.js"></script><script defer src="<%= publicPath %>/static/module-react-dom.e30dc02c67fb.js"></script><script defer src="<%= publicPath %>/static/module-photoswipe.ad2f0fa919d3.js"></script><script defer src="<%= publicPath %>/static/module-react-hook-form.9f53e209cac9.js"></script><script defer src="<%= publicPath %>/static/module-luxon.bd91cc04f692.js"></script><script defer src="<%= publicPath %>/static/module-js-yaml.2d4395c9c669.js"></script><script defer src="<%= publicPath %>/static/module-i18next.02314eb38a50.js"></script><script defer src="<%= publicPath %>/static/module-dompurify.f831e02393c1.js"></script><script defer src="<%= publicPath %>/static/module-remixicon.14ebf67d0f94.js"></script><script defer src="<%= publicPath %>/static/module-react-beautiful-dnd.7dc0495a3d7a.js"></script><script defer src="<%= publicPath %>/static/module-remix-run.2ae7c858d76d.js"></script><script defer src="<%= publicPath %>/static/vendor.9f7c573bfc6c.js"></script><script defer src="<%= publicPath %>/static/main.ff151bede8b5.js"></script><link href="<%= publicPath %>/static/vendor.5cef68176af2.css" rel="stylesheet"></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `yarn start`.
+      To create a production bundle, use `yarn build`.
+    -->
+  </body>
+</html>

@@ -1,0 +1,168 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Backstage is an open source framework for building developer portals"/><link rel="manifest" href="/manifest.json" crossorigin="use-credentials"/><link rel="icon" href="/favicon.ico"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"/><title>Scaffolded Backstage App</title><meta name="backstage-app-mode" content="public"><script defer="defer" src="/static/runtime.0e6c3ca8b36c.js"></script><script defer="defer" src="/static/module-backstage.9769796e007c.js"></script><script defer="defer" src="/static/module-react-aria.97917e5b6400.js"></script><script defer="defer" src="/static/module-material-ui.f0e4f3d5ff24.js"></script><script defer="defer" src="/static/module-lodash.c4748bc1f07b.js"></script><script defer="defer" src="/static/module-motion-dom.addca0b71b0f.js"></script><script defer="defer" src="/static/module-date-fns.e6ec5c7ec32c.js"></script><script defer="defer" src="/static/module-azure.e1b303e4053a.js"></script><script defer="defer" src="/static/module-zod.cdcab6ffa117.js"></script><script defer="defer" src="/static/module-yaml.0433853338a8.js"></script><script defer="defer" src="/static/module-typespec.6d7c0923e82b.js"></script><script defer="defer" src="/static/module-ajv.164b722ab09c.js"></script><script defer="defer" src="/static/module-framer-motion.065988d2db50.js"></script><script defer="defer" src="/static/module-mui.fd5a29c840a9.js"></script><script defer="defer" src="/static/module-material-table.2d7f5d9a14a5.js"></script><script defer="defer" src="/static/module-react-stately.6963ceb9732a.js"></script><script defer="defer" src="/static/module-react-aria-components.16c60eb3cae7.js"></script><script defer="defer" src="/static/module-micromark-core-commonmark.6d530f9db11e.js"></script><script defer="defer" src="/static/module-parse5.b1755bf0fabb.js"></script><script defer="defer" src="/static/module-octokit.84d9b6911ec4.js"></script><script defer="defer" src="/static/module-xterm.9884858c2ba5.js"></script><script defer="defer" src="/static/module-react-dom.e30dc02c67fb.js"></script><script defer="defer" src="/static/module-photoswipe.ad2f0fa919d3.js"></script><script defer="defer" src="/static/module-react-hook-form.9f53e209cac9.js"></script><script defer="defer" src="/static/module-luxon.bd91cc04f692.js"></script><script defer="defer" src="/static/module-js-yaml.2d4395c9c669.js"></script><script defer="defer" src="/static/module-i18next.02314eb38a50.js"></script><script defer="defer" src="/static/module-dompurify.f831e02393c1.js"></script><script defer="defer" src="/static/module-remixicon.14ebf67d0f94.js"></script><script defer="defer" src="/static/module-react-beautiful-dnd.7dc0495a3d7a.js"></script><script defer="defer" src="/static/module-remix-run.2ae7c858d76d.js"></script><script defer="defer" src="/static/vendor.9f7c573bfc6c.js"></script><script defer="defer" src="/static/main.ff151bede8b5.js"></script><link href="/static/vendor.5cef68176af2.css" rel="stylesheet"><script type="backstage.io/config">[
+  {
+    "context": "app-config.yaml",
+    "data": {
+      "app": {
+        "title": "Scaffolded Backstage App",
+        "baseUrl": "http://localhost:3000",
+        "packages": "all",
+        "extensions": [
+          {
+            "page:catalog": {
+              "config": {
+                "path": "/"
+              }
+            }
+          },
+          {
+            "home-page-widget:home/toolkit": {
+              "config": {
+                "tools": [
+                  {
+                    "url": "https://backstage.io/docs",
+                    "label": "Docs",
+                    "icon": "docs"
+                  },
+                  {
+                    "url": "https://github.com/backstage/backstage",
+                    "label": "GitHub",
+                    "icon": "github"
+                  },
+                  {
+                    "url": "https://github.com/backstage/backstage/blob/master/CONTRIBUTING.md",
+                    "label": "Contributing",
+                    "icon": "docs"
+                  },
+                  {
+                    "url": "https://backstage.io/plugins",
+                    "label": "Plugins Directory",
+                    "icon": "kind:component"
+                  },
+                  {
+                    "url": "https://github.com/backstage/backstage/issues/new/choose",
+                    "label": "Submit New Issue",
+                    "icon": "github"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "home-page-widget:home/world-clock": {
+              "config": {
+                "clockConfigs": [
+                  {
+                    "label": "NYC",
+                    "timeZone": "America/New_York"
+                  },
+                  {
+                    "label": "UTC",
+                    "timeZone": "UTC"
+                  },
+                  {
+                    "label": "STO",
+                    "timeZone": "Europe/Stockholm"
+                  },
+                  {
+                    "label": "TYO",
+                    "timeZone": "Asia/Tokyo"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "page:home": {
+              "config": {
+                "defaultConfig": [
+                  {
+                    "component": "HomePageSearchBar",
+                    "column": 0,
+                    "row": 0,
+                    "width": 12,
+                    "height": 2,
+                    "deletable": false
+                  },
+                  {
+                    "component": "GettingStarted",
+                    "column": 0,
+                    "row": 1,
+                    "width": 4,
+                    "height": 11
+                  },
+                  {
+                    "component": "HomePageStarredEntities",
+                    "column": 4,
+                    "row": 2,
+                    "width": 4,
+                    "height": 4
+                  },
+                  {
+                    "component": "HomePageRandomJoke",
+                    "column": 8,
+                    "row": 2,
+                    "width": 4,
+                    "height": 4
+                  },
+                  {
+                    "component": "HomePageToolkit",
+                    "column": 4,
+                    "row": 6,
+                    "width": 4,
+                    "height": 3
+                  },
+                  {
+                    "component": "HomePageWorldClock",
+                    "column": 8,
+                    "row": 6,
+                    "width": 4,
+                    "height": 3
+                  },
+                  {
+                    "component": "HomePageMostVisited",
+                    "column": 4,
+                    "row": 9,
+                    "width": 4,
+                    "height": 4
+                  },
+                  {
+                    "component": "HomePageRecentlyVisited",
+                    "column": 8,
+                    "row": 9,
+                    "width": 4,
+                    "height": 4
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "organization": {
+        "name": "My Company"
+      },
+      "backend": {
+        "baseUrl": "http://localhost:7007"
+      },
+      "integrations": {
+        "github": [
+          {
+            "host": "github.com"
+          }
+        ]
+      },
+      "techdocs": {
+        "builder": "local"
+      },
+      "catalog": {
+        "import": {
+          "entityFilename": "catalog-info.yaml",
+          "pullRequestBranchName": "backstage-integration"
+        }
+      },
+      "permission": {
+        "enabled": true
+      }
+    }
+  }
+]</script></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>

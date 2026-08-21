@@ -37,6 +37,7 @@ dist-types
 
 !packages/backend/
 !packages/backend/dist/
+!packages/app/dist/
 !packages/backend/dist/skeleton.tar.gz
 !packages/backend/dist/bundle.tar.gz
 
