@@ -106,9 +106,10 @@ backend:
   # auth:
   #   keys:
   #     - secret: ${BACKEND_SECRET}
-  baseUrl: http://localhost:${BACKEND_PORT:-7007}
+  baseUrl: http://${BACKEND_HOST:-localhost:7007}
+
   listen:
-    port: ${BACKEND_PORT:-7007}
+    port: 7007
     # Uncomment the following host directive to bind to specific interfaces
     # host: 127.0.0.1
   csp:

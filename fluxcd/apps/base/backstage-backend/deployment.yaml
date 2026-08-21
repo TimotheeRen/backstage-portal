@@ -24,3 +24,5 @@ spec:
                 secretKeyRef:
                   name: backstage-postgres-cluster-app
                   key: uri
+            - name: BACKEND_HOST
+              value: "localhost:7000"
