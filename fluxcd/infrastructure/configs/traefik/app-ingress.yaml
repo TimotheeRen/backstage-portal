@@ -15,3 +15,10 @@ spec:
                 name: backstage-frontend
                 port:
                   number: 8080
+          - path: /api
+            pathType: Prefix
+            backend:
+              service:
+                name: backstage-backend
+                port:
+                  number: 8080

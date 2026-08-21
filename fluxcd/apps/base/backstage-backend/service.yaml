@@ -8,6 +8,6 @@ spec:
     app: backstage-backend
   ports:
     - protocol: TCP
-      port: 7007
+      port: 8080
       targetPort: 7007
   type: ClusterIP
