@@ -18,3 +18,9 @@ spec:
           image: timotheeren/backstage-backend:sha-5253987ddddcba3c70760ac58e7beb1f348cb5c6
           ports:
             - containerPort: 7007
+          env:
+            - name: POSTGRES_URI
+              valueFrom:
+                secretKeyRef:
+                  name: backstage-postgres-cluster-app
+                  key: uri

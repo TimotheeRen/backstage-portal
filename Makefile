@@ -19,5 +19,4 @@ show-password:
 	@echo "backstage-postgres-cluster-app: $$(kubectl get secret backstage-postgres-cluster-app -o jsonpath='{.data.password}' | base64 -d)"
 
 attach:
-	mkdir ~/.kube
 	sudo k3d kubeconfig get Backstage > ~/.kube/config
