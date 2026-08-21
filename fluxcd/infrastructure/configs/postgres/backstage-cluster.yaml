@@ -5,5 +5,11 @@ metadata:
   namespace: default
 spec:
   instances: 1
+  bootstrap:
+    initdb:
+      database: backstage
+      owner: app
+      postInitSQL:
+        - ALTER ROLE app CREATEDB
   storage:
     size: 1Gi

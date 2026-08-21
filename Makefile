@@ -13,11 +13,10 @@ delete:
 	k3d cluster delete Backstage
 
 forward:
-	kubectl port-forward svc/desktops-postgres-cluster-rw 5433:5432 & # TODO: Adapt it with CNPG DB
+	kubectl port-forward svc/backstage-postgres-cluster-rw 5433:5432 &
 
-show-passwords:
-	@echo "desktops-postgres-cluster-app: $$(kubectl get secret desktops-postgres-cluster-app -o jsonpath='{.data.password}' | base64 -d)" # TODO: Adapt it with CNPG DB
-
+show-password:
+	@echo "backstage-postgres-cluster-app: $$(kubectl get secret backstage-postgres-cluster-app -o jsonpath='{.data.password}' | base64 -d)"
 
 attach:
 	mkdir ~/.kube

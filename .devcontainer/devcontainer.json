@@ -1,5 +1,9 @@
 {
   "image": "mcr.microsoft.com/devcontainers/typescript-node",
+  "forwardPorts": [
+    3000,
+    8081
+  ],
   "features": {
     "ghcr.io/devcontainers/features/common-utils": {
       "configureZshAsDefaultShell": true
