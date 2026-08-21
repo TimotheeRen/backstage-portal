@@ -11,7 +11,7 @@ backend:
   baseUrl: http://localhost:8080
   # The listener can also be expressed as a single <host>:<port> string. In this case we bind to
   # all interfaces, the most permissive setting. The right value depends on your specific deployment.
-  listen: ":7000"
+  listen: ":8080"
 
   # config options: https://node-postgres.com/apis/client
   database:
