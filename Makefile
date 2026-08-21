@@ -1,7 +1,7 @@
 dev:
 	k3d cluster create --config k3d/dev-env.yaml \
         --port "8080:30080@loadbalancer" \
-		    --port "7007:30707@loadbalancer"
+		    --port "7000:30700@loadbalancer"
 	mkdir -p ~/.kube
 	k3d kubeconfig get Backstage > ~/.kube/config
 	helm install flux-operator oci://ghcr.io/controlplaneio-fluxcd/charts/flux-operator \

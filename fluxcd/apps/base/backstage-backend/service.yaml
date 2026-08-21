@@ -7,6 +7,6 @@ spec:
   selector:
     app: backstage-backend
   ports:
-    - port: 7007
-      targetPort: 7007
-      nodePort: 30707
+    - port: 7000
+      targetPort: 7000
+      nodePort: 30700
