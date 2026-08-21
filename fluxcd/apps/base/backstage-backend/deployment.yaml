@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: backstage-backend
+  name: backstage
   namespace: default
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: backstage-backend
+      app: backstage
   template:
     metadata:
       labels:
-        app: backstage-backend
+        app: backstage
     spec:
       containers:
-        - name: backstage-backend
-          image: timotheeren/backstage-backend:sha-084b90723bf1c1739d8f1b4fc8b5bebb2bfdc444
+        - name: backstage
+          image: timotheeren/backstage:sha-084b90723bf1c1739d8f1b4fc8b5bebb2bfdc444
           ports:
             - containerPort: 8080
           env:

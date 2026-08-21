@@ -8,17 +8,10 @@ spec:
   rules:
     - http:
         paths:
-          - path: /api
-            pathType: Prefix
-            backend:
-              service:
-                name: backstage-backend
-                port:
-                  number: 8080
           - path: /
             pathType: Prefix
             backend:
               service:
-                name: backstage-frontend
+                name: backstage
                 port:
                   number: 8080

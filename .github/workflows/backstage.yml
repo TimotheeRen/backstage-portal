@@ -1,4 +1,4 @@
-name: Backstage Frontend CI/CD
+name: Backstage CI/CD
 
 on:
   push:
@@ -10,8 +10,8 @@ jobs:
   ci:
     uses: timotheeren/backstage-portal/.github/workflows/ci.yml@main
     with:
-      image: "backstage-frontend"
-      path: "Dockerfile-frontend"
+      image: "backstage"
+      path: "Dockerfile"
     secrets:
       dockerhub-username: ${{ vars.DOCKERHUB_USERNAME }}
       dockerhub-token: ${{ secrets.DOCKERHUB_TOKEN }}
@@ -20,8 +20,8 @@ jobs:
     needs: ci
     uses: timotheeren/backstage-portal/.github/workflows/cd.yml@main
     with:
-      image: "timotheeren/backstage-frontend"
+      image: "timotheeren/backstage"
       tag: "sha-${{ github.sha }}"
-      path: "backstage-frontend"
+      path: "backstage"
     secrets:
       token: ${{ secrets.PAT }}
